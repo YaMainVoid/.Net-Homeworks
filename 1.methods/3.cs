@@ -15,7 +15,7 @@ namespace ConsoleApp1
             {
                 int square = a[i] * a[i];
                 if (square == b[i]) { continue; }
-                else return false;
+                else { return false; }
             }
             return true;
         }
