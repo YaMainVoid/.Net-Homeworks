@@ -14,7 +14,8 @@ namespace ConsoleApp1
             for (int i = 0; i < a.Length; i++)
             {
                 int square = a[i] * a[i];
-                if (square != b[i]) return false;
+                if (square == b[i]) { continue; }
+                else return false;
             }
             return true;
         }
