@@ -19,6 +19,7 @@ namespace ConsoleApp1
                 
                 if (CheckNumber(value))
                 {
+                    IsNegative = value[0] == '-';
                     val = value;
                 }
                 else
@@ -62,7 +63,7 @@ namespace ConsoleApp1
             {
                 return false;
             }
-            //IsNegative = num[0] == '-';
+            
             if (num[0] == '-' || char.IsDigit(num[0]))
             {
                 for (int i = 1; i < num.Length; i++)
