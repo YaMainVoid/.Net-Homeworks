@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 namespace ConsoleApp1
@@ -315,6 +315,7 @@ namespace ConsoleApp1
             if (this.IsNegative && isSubtrahendNegative && compareInfo == 1)
             {
                 string result = GetResidual(subtrahend, Value);
+                this.IsNegative = false;
                 val = result;
                 return;
             }
@@ -332,6 +333,7 @@ namespace ConsoleApp1
             {
                 string result = GetResidual(subtrahend, Value);
                 AddMinusSign(ref result);
+                this.IsNegative = true;
                 val = result;
                 return;
             }
