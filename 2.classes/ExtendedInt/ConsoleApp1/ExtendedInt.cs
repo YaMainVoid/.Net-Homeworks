@@ -358,7 +358,14 @@ namespace ConsoleApp1
             }
             catch (OverflowException e)
             {
-                a = new BigInteger(long.MaxValue);
+                if (Value[0] != '-')
+                {
+                    a = new BigInteger(long.MaxValue);
+                }
+                else
+                {
+                    a = new BigInteger(long.MinValue);
+                }
             }
             try
             {
@@ -367,9 +374,16 @@ namespace ConsoleApp1
             }
             catch (OverflowException e)
             {
-                b = new BigInteger(long.MaxValue);
+                if (denominator[0] != '-')
+                {
+                    b = new BigInteger(long.MaxValue);
+                }
+                else
+                {
+                    b = new BigInteger(long.MinValue);
+                }
             }
-            if (a == 0)
+            if (b == 0)
             {
                 throw new DivideByZeroException("");
             }
@@ -394,7 +408,14 @@ namespace ConsoleApp1
             }
             catch (OverflowException e)
             {
-                a = new BigInteger(long.MaxValue);
+                if (Value[0] != '-')
+                {
+                    a = new BigInteger(long.MaxValue);
+                }
+                else
+                {
+                    a = new BigInteger(long.MinValue);
+                }
             }
             try
             {
@@ -403,7 +424,14 @@ namespace ConsoleApp1
             }
             catch (OverflowException e)
             {
-                b = new BigInteger(long.MaxValue);
+                if (denominator[0] != '-')
+                {
+                    b = new BigInteger(long.MaxValue);
+                }
+                else
+                {
+                    b = new BigInteger(long.MinValue);
+                }
             }
 
             Value = (a * b).ToString();
