@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,14 +20,13 @@ namespace MyLinkedList
             maxItemCount = 8;
             currentPos = 0;
             items = new T[maxItemCount];
-            maxItemCount = 0;
         }
 
         public void Add(T item)
         {
             if (currentPos == maxItemCount)
             {
-                maxItemCount++;
+                maxItemCount *= 2;
                 Array.Resize<T>(ref items, maxItemCount);
             }
             if (currentPos > maxEvailabledPos)
@@ -35,7 +34,7 @@ namespace MyLinkedList
                 maxEvailabledPos++;
             }
             items[currentPos++] = item;
-            Array.Sort(items);
+            Array.Sort(items, 0, currentPos);
         }
 
         public void SetOnFirst()
