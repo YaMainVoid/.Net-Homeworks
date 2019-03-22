@@ -27,7 +27,7 @@ namespace MyLinkedList
         {
             if (currentPos == maxItemCount)
             {
-                maxItemCount++;
+                maxItemCount *= 2;
                 Array.Resize<T>(ref items, maxItemCount);
             }
             if (currentPos > maxEvailabledPos)
