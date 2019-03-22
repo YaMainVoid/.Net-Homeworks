@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\bin\Debug\Spliter.exe.config
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\bin\Debug\Spliter.exe
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\bin\Debug\Spliter.pdb
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\obj\Debug\Spliter.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\obj\Debug\Spliter.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\obj\Debug\Spliter.exe
+C:\Users\Admin\Desktop\HW\2.classes\Spliter\Spliter\obj\Debug\Spliter.pdb
