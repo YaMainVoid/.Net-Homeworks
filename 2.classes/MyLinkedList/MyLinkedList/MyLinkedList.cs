@@ -34,7 +34,7 @@ namespace MyLinkedList
                 maxEvailabledPos++;
             }
             items[currentPos++] = item;
-            Array.Sort(items, 0, currentPos);
+            Array.Sort(items, 0, maxEvailabledPos);
         }
 
         public void SetOnFirst()
